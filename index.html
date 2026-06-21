@@ -27,16 +27,21 @@
 
         <div class="right">
           <div class="right-content1">
-            <button class="right-button bs1">Plan with AI</button>
-            <button class="right-button">Discover</button>
-            <button class="right-button">Review</button>
-            <button class="right-button">More</button>
-
-            <button class="right-button">
-              <i class="fa-solid fa-globe"></i> | INR
-            </button>
-
-            <button class="right-button signin">Sign In</button>
+            <ul class="nav-bar">
+              <li><button class="right-button bs1">Plan with AI</button></li>
+              <li><button class="right-button">Discover</button></li>
+              <li><button class="right-button">Review</button></li>
+              <li><button class="right-button">More</button></li>
+              <li>
+                <button class="right-button">
+                  <i class="fa-solid fa-globe"></i> | INR
+                </button>
+              </li>
+              <li>
+                <button class="right-button signin">Sign In</button>
+              </li>
+            </ul>
+            
           </div>
           <div class="right-content2">
             <button class="right-button signin">
@@ -69,18 +74,44 @@
           </div>
         </div>
 
-        <!-- SEARCH -->
         <div class="search-bar">
           <div class="search-box">
             <input
               class="search-input"
               type="text"
-              placeholder="Discover anything, anywhere"
-            />
+              placeholder="Discover anything, anywhere"/>
+
             <button class="right-button search-btn">
               <i class="fa-solid fa-magnifying-glass"></i>
               <span>Search</span>
             </button>
+
+            <div class="filters">
+              <div class="filter-item">
+                <label for="price">Price Range</label>
+                <select id="price">
+                  <option value="">Any Price</option>
+                  <option value="budget">Budget (Under ₹2,000)</option>
+                  <option value="mid">Mid-Range (₹2,000 - ₹5,000)</option>
+                  <option value="luxury">Luxury (Above ₹5,000)</option>
+                </select>
+              </div>
+
+              <div class="filter-item">
+                <label for="rating">Rating</label>
+
+                <select id="rating">
+
+                  <option value="">Any Rating</option>
+                  <option value="3">3⭐ & above</option>
+                  <option value="4">4⭐ & above</option>
+                  <option value="5">5⭐ only</option>
+                  
+                </select>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -411,7 +442,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Triply LLC All rights reserved.</p>
+        <p>&copy; 2026 Triply LLC All rights reserved.</p>
         <div class="footer-bottom-links">
           <p>Terms of Use</p>
           <p>Privacy and Cookies Statement</p>
@@ -419,6 +450,13 @@
           <p>How the Site Works</p>
           <p>Contact Us</p>
           <p>Accessibility Statement</p>
+        </div>
+        <div class="symbols">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-tiktok"></i>
         </div>
         <div class="footer-selectors">
           <select name="currency">
